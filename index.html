@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omega Concept | Consultanță Administrativă Premium</title>
+  <meta name="description" content="Omega Concept oferă consultanță administrativă premium, organizare documente, suport KPI, acte contabile și soluții rapide pentru antreprenori și companii.">
+  <meta name="keywords" content="consultanță administrativă, acte contabile, KPI, afiliere, business support, Omega Concept">
+  <meta property="og:title" content="Omega Concept | Consultanță Administrativă Premium">
+  <meta property="og:description" content="Ordine, eficiență și suport administrativ premium pentru antreprenori și companii.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#13213a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --navy:#0f1a2d; --navy-2:#182844; --navy-3:#22385f; --gold:#caa24a; --gold-2:#f1d487;
+      --text:#24344d; --muted:#697589; --line:#dde3ec; --shadow:0 20px 40px rgba(10,18,35,0.12);
+      --shadow-soft:0 12px 24px rgba(10,18,35,0.08); --radius:20px; --max:1180px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Arial,sans-serif;background:linear-gradient(180deg,#f7f9fc 0%,#edf1f6 100%);color:var(--text)}
+    img{max-width:100%;display:block} a{text-decoration:none;color:inherit}
+    .topbar{background:#0d1728;color:#eef3fa;padding:10px 18px;font-size:14px}
+    .topbar-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .topbar strong{color:#fff}.topbar .mini-cta{color:#f5d991;font-weight:700}
+    .hero{position:relative;min-height:620px;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;color:#fff;
+      background:radial-gradient(circle at 50% 18%, rgba(255,255,255,0.10), transparent 28%),
+      linear-gradient(180deg, rgba(8,15,28,0.95), rgba(20,32,58,0.92)),
+      url('hero_reference.png') center/cover no-repeat;}
+    .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at center bottom, rgba(218,182,90,0.40), transparent 42%);pointer-events:none}
+    .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:120px;background:linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(247,249,252,1) 100%)}
+    .lang-switch{position:absolute;top:18px;right:18px;display:flex;gap:10px;z-index:3}
+    .lang-btn{width:32px;height:22px;border:0;padding:0;border-radius:4px;overflow:hidden;background:transparent;cursor:pointer;box-shadow:0 4px 10px rgba(0,0,0,0.15)}
+    .hero-content{position:relative;z-index:2;max-width:1100px;padding:50px 24px 94px;animation:fadeUp 1s ease}
+    .omega{font-family:'Cormorant Garamond',serif;font-size:220px;line-height:.8;background:linear-gradient(180deg,#fff7cc,#ebc96f,#9e6c18);
+      -webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 10px 24px rgba(0,0,0,0.30);
+      filter:drop-shadow(0 6px 12px rgba(0,0,0,0.18));margin-bottom:-8px}
+    h1{margin:0;font-family:'Cormorant Garamond',serif;font-size:clamp(58px,7vw,96px);line-height:.95;color:#f8f1e5;text-shadow:0 8px 18px rgba(0,0,0,0.28)}
+    .subtitle{margin:10px auto 0;font-size:clamp(20px,2.4vw,34px);color:#f1e8d7;max-width:780px}
+    .hero-copy{max-width:840px;margin:20px auto 0;font-size:18px;line-height:1.8;color:rgba(255,255,255,0.94)}
+    .hero-points{margin:28px auto 0;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;max-width:900px}
+    .hero-pill{padding:10px 16px;border-radius:999px;background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.14);backdrop-filter:blur(6px);font-size:14px;font-weight:600}
+    .hero-actions{margin-top:30px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+    .btn{min-width:220px;height:54px;padding:0 24px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;transition:transform .2s ease, box-shadow .2s ease, background .2s ease}
+    .btn-primary{color:#14233e;background:linear-gradient(180deg,var(--gold-2),var(--gold));box-shadow:0 12px 24px rgba(202,162,74,0.28)}
+    .btn-secondary{color:#fff;border:1px solid rgba(255,255,255,0.28);background:rgba(255,255,255,0.08);backdrop-filter:blur(6px)}
+    .btn:hover{transform:translateY(-2px)}
+    nav{position:sticky;top:0;z-index:20;background:linear-gradient(90deg,#223558,#101b31,#223558);display:flex;justify-content:center;gap:26px;padding:16px 20px;color:#fff;box-shadow:0 8px 22px rgba(0,0,0,0.10)}
+    nav a{font-weight:600;font-size:15px;letter-spacing:.2px}
+    .trust-strip{max-width:var(--max);margin:-28px auto 0;padding:0 20px;position:relative;z-index:4}
+    .trust-box{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:24px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;padding:18px}
+    .trust-item{text-align:center;padding:12px 10px}.trust-item strong{display:block;color:var(--navy);font-size:18px;margin-bottom:6px}.trust-item span{color:var(--muted);font-size:14px;line-height:1.6}
+    .section{max-width:var(--max);margin:0 auto;padding:70px 20px}
+    .section-head{text-align:center;max-width:860px;margin:0 auto 36px}
+    .eyebrow{display:inline-block;padding:8px 14px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--navy-3);font-size:13px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;box-shadow:var(--shadow-soft)}
+    .section h2{margin:16px 0 10px;font-family:'Cormorant Garamond',serif;font-size:clamp(42px,5vw,64px);line-height:1;color:var(--navy)}
+    .section-head p{margin:0;color:var(--muted);font-size:18px;line-height:1.75}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+    .card{background:rgba(255,255,255,0.98);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid #e2e7ef;transition:transform .25s ease, box-shadow .25s ease}
+    .card:hover{transform:translateY(-8px);box-shadow:0 24px 46px rgba(10,18,35,0.16)}
+    .card img{width:100%;height:220px;object-fit:cover}
+    .card-body{padding:22px}.card h3{margin:0 0 10px;font-size:24px;color:var(--navy-2)}.card p{margin:0;color:var(--muted);line-height:1.75;font-size:15px}
+    .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+    .step{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px 22px;box-shadow:var(--shadow-soft)}
+    .step-number{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,var(--gold-2),var(--gold));color:#13213a;font-weight:800;margin-bottom:18px}
+    .step strong{display:block;font-size:22px;color:var(--navy);margin-bottom:10px}.step p{margin:0;color:var(--muted);line-height:1.75}
+    .value-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:14px}
+    .value-box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 18px;text-align:center;box-shadow:var(--shadow-soft)}
+    .value-box strong{display:block;font-size:18px;color:var(--navy);margin-bottom:8px}.value-box span{color:var(--muted);font-size:14px;line-height:1.6}
+    .cta-band{margin:8px auto 0;max-width:var(--max);padding:0 20px 10px}
+    .cta-box{background:linear-gradient(135deg,#13213a 0%,#1f3356 55%,#2b4776 100%);color:#fff;border-radius:28px;padding:34px 30px;display:grid;grid-template-columns:1.3fr .9fr;gap:24px;align-items:center;box-shadow:0 26px 50px rgba(16,27,49,0.22);overflow:hidden;position:relative}
+    .cta-box::after{content:"Ω";position:absolute;right:20px;bottom:-26px;font-family:'Cormorant Garamond',serif;font-size:180px;line-height:1;color:rgba(255,255,255,0.08)}
+    .cta-box h3{margin:0 0 10px;font-family:'Cormorant Garamond',serif;font-size:46px;line-height:1;color:#fff2cf}
+    .cta-box p{margin:0;color:rgba(255,255,255,0.9);line-height:1.8;font-size:17px}.cta-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+    .testimonial-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+    .testimonial{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:var(--shadow-soft)}
+    .stars{color:var(--gold);font-size:18px;letter-spacing:2px;margin-bottom:12px}.testimonial p{margin:0 0 14px;color:var(--muted);line-height:1.8}.testimonial strong{color:var(--navy)}
+    .faq{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .faq-item{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow-soft)}
+    .faq-item strong{display:block;color:var(--navy);font-size:20px;margin-bottom:10px}.faq-item p{margin:0;color:var(--muted);line-height:1.75}
+    .contact-panel{background:#fff;border-radius:24px;box-shadow:var(--shadow);border:1px solid var(--line);padding:34px 24px;text-align:center}
+    .contact-list{display:flex;justify-content:center;gap:34px;flex-wrap:wrap;margin:24px 0 0}
+    .contact-item{min-width:240px;padding:20px;border-radius:16px;background:linear-gradient(180deg,#f8fafc,#eef3f8);border:1px solid var(--line)}
+    .contact-item strong{display:block;margin-bottom:8px;color:var(--navy)}.contact-item a,.contact-item span{color:var(--muted);font-weight:600}
+    footer{margin-top:10px;background:#13213a;color:#fff;text-align:center;padding:24px 20px 34px;font-size:15px}
+    .whatsapp{position:fixed;right:22px;bottom:22px;width:74px;height:74px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#35df73,#12b14a);color:#fff;font-size:32px;box-shadow:0 18px 30px rgba(12,122,49,0.28);z-index:30;animation:floaty 2.6s ease-in-out infinite}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}} @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+    @media(max-width:1024px){.grid,.testimonial-grid,.steps{grid-template-columns:repeat(2,minmax(0,1fr))}.value-grid,.trust-box{grid-template-columns:repeat(2,minmax(0,1fr))}.cta-box,.faq{grid-template-columns:1fr}.omega{font-size:170px}}
+    @media(max-width:760px){.topbar-inner{justify-content:center;text-align:center}.hero{min-height:560px}.omega{font-size:120px}nav{gap:16px;flex-wrap:wrap}.grid,.testimonial-grid,.value-grid,.steps,.trust-box,.faq{grid-template-columns:1fr}.hero-actions,.cta-actions{flex-direction:column}.btn{width:100%}.section{padding:56px 18px}.card img{height:210px}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Omega Concept",
+    "email": "omega.conceptdv@gmail.com",
+    "telephone": "+32483492666",
+    "areaServed": "Europe",
+    "serviceType": "Administrative Consulting"
+  }
+  </script>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <div id="topbarText"><strong>Omega Concept</strong> — suport administrativ premium pentru antreprenori și companii</div>
+    <a class="mini-cta" href="https://wa.me/32483492666" target="_blank" rel="noopener" id="topbarCta">Răspuns rapid pe WhatsApp</a>
+  </div>
+</div>
+<header class="hero" id="top">
+  <div class="lang-switch">
+    <button class="lang-btn" onclick="setLang('ro')" aria-label="Română"><img src="https://flagcdn.com/w40/ro.png" alt="RO"></button>
+    <button class="lang-btn" onclick="setLang('en')" aria-label="English"><img src="https://flagcdn.com/w40/gb.png" alt="EN"></button>
+    <button class="lang-btn" onclick="setLang('fr')" aria-label="Français"><img src="https://flagcdn.com/w40/fr.png" alt="FR"></button>
+  </div>
+  <div class="hero-content">
+    <div class="omega">Ω</div>
+    <h1>Omega Concept</h1>
+    <div class="subtitle" id="heroSubtitle">Consultanță Administrativă Premium</div>
+    <p class="hero-copy" id="heroCopy">Simplificăm procesele administrative, organizăm documentele și oferim suport clar pentru antreprenori și companii care vor mai mult control, mai puțin stres și un partener de încredere.</p>
+    <div class="hero-points">
+      <div class="hero-pill" id="heroPill1">Răspuns rapid</div>
+      <div class="hero-pill" id="heroPill2">Imagine profesională</div>
+      <div class="hero-pill" id="heroPill3">Suport orientat pe soluții</div>
+    </div>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://wa.me/32483492666" target="_blank" rel="noopener" id="heroCta1">Scrie-ne pe WhatsApp</a>
+      <a class="btn btn-secondary" href="#contact" id="heroCta2">Contactează-ne acum</a>
+    </div>
+  </div>
+</header>
+<nav>
+  <a href="#servicii" id="navServices">Servicii</a>
+  <a href="#cum-lucram" id="navProcess">Cum lucrăm</a>
+  <a href="#de-ce-noi" id="navWhy">De ce noi</a>
+  <a href="#testimoniale" id="navReviews">Testimoniale</a>
+  <a href="#faq" id="navFaq">FAQ</a>
+  <a href="#contact" id="navContact">Contact</a>
+</nav>
+<div class="trust-strip">
+  <div class="trust-box">
+    <div class="trust-item"><strong id="trust1Title">Claritate</strong><span id="trust1Text">Explicații simple și pași concreți pentru fiecare situație.</span></div>
+    <div class="trust-item"><strong id="trust2Title">Timp salvat</strong><span id="trust2Text">Reducem haosul administrativ și îți eliberăm agenda.</span></div>
+    <div class="trust-item"><strong id="trust3Title">Profesionalism</strong><span id="trust3Text">Comunicare elegantă și grijă pentru detalii.</span></div>
+    <div class="trust-item"><strong id="trust4Title">Rezultate</strong><span id="trust4Text">Soluții aplicabile, nu promisiuni vagi.</span></div>
+  </div>
+</div>
+<section class="section" id="servicii">
+  <div class="section-head">
+    <span class="eyebrow" id="servicesEyebrow">Servicii premium</span>
+    <h2 id="servicesTitle">Tot ce ai nevoie pentru o administrare clară și eficientă</h2>
+    <p id="servicesText">Am construit serviciile Omega Concept pentru antreprenori care vor ordine, rapiditate și comunicare profesionistă în fiecare etapă administrativă.</p>
+  </div>
+  <div class="grid" id="servicesGrid"></div>
+</section>
+<section class="section" id="cum-lucram">
+  <div class="section-head">
+    <span class="eyebrow" id="processEyebrow">Proces simplu</span>
+    <h2 id="processTitle">Cum lucrăm</h2>
+    <p id="processText">Am gândit colaborarea simplu, rapid și clar, astfel încât să știi din primul moment ce urmează.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="step-number">1</div><strong id="step1Title">Analizăm nevoia</strong><p id="step1Text">Discutăm situația ta concretă și identificăm rapid ce ai nevoie.</p></div>
+    <div class="step"><div class="step-number">2</div><strong id="step2Title">Stabilim soluția</strong><p id="step2Text">Îți explicăm clar pașii, documentele și modul în care te putem ajuta.</p></div>
+    <div class="step"><div class="step-number">3</div><strong id="step3Title">Implementăm eficient</strong><p id="step3Text">Ne ocupăm organizat de proces, cu comunicare clară și suport constant.</p></div>
+  </div>
+</section>
+<section class="section" id="de-ce-noi">
+  <div class="section-head">
+    <span class="eyebrow" id="whyEyebrow">Avantaj competitiv</span>
+    <h2 id="whyTitle">De ce aleg clienții Omega Concept</h2>
+    <p id="whyText">Nu oferim doar servicii administrative. Oferim claritate, viteză de răspuns și un mod de lucru care inspiră încredere.</p>
+  </div>
+  <div class="value-grid">
+    <div class="value-box"><strong id="value1Title">Rapiditate</strong><span id="value1Text">Răspunsuri prompte și soluții clare, fără complicații inutile.</span></div>
+    <div class="value-box"><strong id="value2Title">Profesionalism</strong><span id="value2Text">Comunicare elegantă și atenție reală pentru fiecare detaliu.</span></div>
+    <div class="value-box"><strong id="value3Title">Organizare</strong><span id="value3Text">Documente, procese și informații puse în ordine pentru liniștea ta.</span></div>
+    <div class="value-box"><strong id="value4Title">Încredere</strong><span id="value4Text">Un partener serios, orientat spre rezultate și colaborări pe termen lung.</span></div>
+  </div>
+</section>
+<div class="cta-band">
+  <div class="cta-box">
+    <div>
+      <h3 id="ctaTitle">Vrei mai puțin stres și mai mult control în business?</h3>
+      <p id="ctaText">Discută direct cu noi pe WhatsApp sau prin email și îți spunem rapid cum te putem ajuta, în funcție de situația ta concretă.</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="https://wa.me/32483492666" target="_blank" rel="noopener" id="ctaBtn1">Contact rapid pe WhatsApp</a>
+      <a class="btn btn-secondary" href="mailto:omega.conceptdv@gmail.com" id="ctaBtn2">Trimite un email</a>
+    </div>
+  </div>
+</div>
+<section class="section" id="testimoniale">
+  <div class="section-head">
+    <span class="eyebrow" id="reviewsEyebrow">Încrederea clienților</span>
+    <h2 id="reviewsTitle">Experiențe care construiesc reputație</h2>
+    <p id="reviewsText">Mesajul pe care vrem să îl transmită site-ul tău este simplu: clienții simt că lucrează cu un partener serios, atent și eficient.</p>
+  </div>
+  <div class="testimonial-grid">
+    <div class="testimonial"><div class="stars">★★★★★</div><p id="review1">“Colaborarea a fost clară, rapidă și foarte bine organizată. Am simțit de la început că lucrăm cu profesioniști.”</p><strong id="review1Name">Client business</strong></div>
+    <div class="testimonial"><div class="stars">★★★★★</div><p id="review2">“Ne-au ajutat să simplificăm procese administrative care ne consumau mult timp. Recomand cu încredere.”</p><strong id="review2Name">Antreprenor</strong></div>
+    <div class="testimonial"><div class="stars">★★★★★</div><p id="review3">“Comunicare excelentă, suport rapid și o imagine foarte serioasă. Exact genul de partener pe care îl cauți.”</p><strong id="review3Name">Partener companie</strong></div>
+  </div>
+</section>
+<section class="section" id="faq">
+  <div class="section-head">
+    <span class="eyebrow" id="faqEyebrow">Întrebări frecvente</span>
+    <h2 id="faqTitle">Răspunsuri rapide la întrebările importante</h2>
+    <p id="faqText">Această secțiune ajută vizitatorii să capete încredere și claritate înainte să te contacteze.</p>
+  </div>
+  <div class="faq">
+    <div class="faq-item"><strong id="faq1Title">Cu cine lucrați?</strong><p id="faq1Text">Lucrăm cu antreprenori, PFA-uri, IMM-uri și companii care au nevoie de suport administrativ clar și profesionist.</p></div>
+    <div class="faq-item"><strong id="faq2Title">Cum începem colaborarea?</strong><p id="faq2Text">Ne scrii pe WhatsApp sau email, ne spui pe scurt ce ai nevoie, iar noi revenim rapid cu pașii următori.</p></div>
+    <div class="faq-item"><strong id="faq3Title">Răspundeți rapid?</strong><p id="faq3Text">Da, prioritatea noastră este să oferim un răspuns clar și rapid, astfel încât să știi imediat ce ai de făcut.</p></div>
+    <div class="faq-item"><strong id="faq4Title">Pot cere informații înainte de colaborare?</strong><p id="faq4Text">Desigur. Putem avea o discuție inițială pentru a înțelege situația și a vedea cum te putem ajuta.</p></div>
+  </div>
+</section>
+<section class="section" id="contact">
+  <div class="contact-panel">
+    <span class="eyebrow" id="contactEyebrow">Contact direct</span>
+    <h2 id="contactTitle">Hai să discutăm despre ce ai nevoie</h2>
+    <p id="contactText">Ne poți contacta rapid pentru informații, colaborări sau o discuție inițială. Răspundem profesionist și orientat către soluții.</p>
+    <div class="contact-list">
+      <div class="contact-item"><strong id="contactItem1Title">Email</strong><a href="mailto:omega.conceptdv@gmail.com">omega.conceptdv@gmail.com</a></div>
+      <div class="contact-item"><strong id="contactItem2Title">Telefon</strong><a href="tel:+32483492666">+32 483 49 26 66</a></div>
+      <div class="contact-item"><strong id="contactItem3Title">WhatsApp</strong><a href="https://wa.me/32483492666" target="_blank" rel="noopener" id="contactWhatsappText">Mesaj direct acum</a></div>
+    </div>
+  </div>
+</section>
+<footer id="footerText">Omega Concept — consultanță administrativă premium pentru antreprenori și companii.</footer>
+<a class="whatsapp" href="https://wa.me/32483492666" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<script>
+const serviceImages = {
+  consultantaAdministrativa: 'consultanta_adm.png',
+  kpi: 'kpi.png',
+  afiliere: 'afiliere.png',
+  contabilitate: 'contabilitate.png',
+  checkinatwork: 'checkinatwork.png',
+  consultanta: 'consultanta.png'
+};
+const translations = {
+  ro: {
+    topbarText:'Omega Concept — suport administrativ premium pentru antreprenori și companii',
+    topbarCta:'Răspuns rapid pe WhatsApp',
+    heroSubtitle:'Consultanță Administrativă Premium',
+    heroCopy:'Simplificăm procesele administrative, organizăm documentele și oferim suport clar pentru antreprenori și companii care vor mai mult control, mai puțin stres și un partener de încredere.',
+    heroPill1:'Răspuns rapid', heroPill2:'Imagine profesională', heroPill3:'Suport orientat pe soluții',
+    heroCta1:'Scrie-ne pe WhatsApp', heroCta2:'Contactează-ne acum',
+    navServices:'Servicii', navProcess:'Cum lucrăm', navWhy:'De ce noi', navReviews:'Testimoniale', navFaq:'FAQ', navContact:'Contact',
+    trust:[['Claritate','Explicații simple și pași concreți pentru fiecare situație.'],['Timp salvat','Reducem haosul administrativ și îți eliberăm agenda.'],['Profesionalism','Comunicare elegantă și grijă pentru detalii.'],['Rezultate','Soluții aplicabile, nu promisiuni vagi.']],
+    servicesEyebrow:'Servicii premium', servicesTitle:'Tot ce ai nevoie pentru o administrare clară și eficientă', servicesText:'Am construit serviciile Omega Concept pentru antreprenori care vor ordine, rapiditate și comunicare profesionistă în fiecare etapă administrativă.',
+    processEyebrow:'Proces simplu', processTitle:'Cum lucrăm', processText:'Am gândit colaborarea simplu, rapid și clar, astfel încât să știi din primul moment ce urmează.',
+    steps:[['Analizăm nevoia','Discutăm situația ta concretă și identificăm rapid ce ai nevoie.'],['Stabilim soluția','Îți explicăm clar pașii, documentele și modul în care te putem ajuta.'],['Implementăm eficient','Ne ocupăm organizat de proces, cu comunicare clară și suport constant.']],
+    whyEyebrow:'Avantaj competitiv', whyTitle:'De ce aleg clienții Omega Concept', whyText:'Nu oferim doar servicii administrative. Oferim claritate, viteză de răspuns și un mod de lucru care inspiră încredere.',
+    values:[['Rapiditate','Răspunsuri prompte și soluții clare, fără complicații inutile.'],['Profesionalism','Comunicare elegantă și atenție reală pentru fiecare detaliu.'],['Organizare','Documente, procese și informații puse în ordine pentru liniștea ta.'],['Încredere','Un partener serios, orientat spre rezultate și colaborări pe termen lung.']],
+    ctaTitle:'Vrei mai puțin stres și mai mult control în business?', ctaText:'Discută direct cu noi pe WhatsApp sau prin email și îți spunem rapid cum te putem ajuta, în funcție de situația ta concretă.', ctaBtn1:'Contact rapid pe WhatsApp', ctaBtn2:'Trimite un email',
+    reviewsEyebrow:'Încrederea clienților', reviewsTitle:'Experiențe care construiesc reputație', reviewsText:'Mesajul pe care vrem să îl transmită site-ul tău este simplu: clienții simt că lucrează cu un partener serios, atent și eficient.',
+    reviews:[['“Colaborarea a fost clară, rapidă și foarte bine organizată. Am simțit de la început că lucrăm cu profesioniști.”','Client business'],['“Ne-au ajutat să simplificăm procese administrative care ne consumau mult timp. Recomand cu încredere.”','Antreprenor'],['“Comunicare excelentă, suport rapid și o imagine foarte serioasă. Exact genul de partener pe care îl cauți.”','Partener companie']],
+    faqEyebrow:'Întrebări frecvente', faqTitle:'Răspunsuri rapide la întrebările importante', faqText:'Această secțiune ajută vizitatorii să capete încredere și claritate înainte să te contacteze.',
+    faqs:[['Cu cine lucrați?','Lucrăm cu antreprenori, PFA-uri, IMM-uri și companii care au nevoie de suport administrativ clar și profesionist.'],['Cum începem colaborarea?','Ne scrii pe WhatsApp sau email, ne spui pe scurt ce ai nevoie, iar noi revenim rapid cu pașii următori.'],['Răspundeți rapid?','Da, prioritatea noastră este să oferim un răspuns clar și rapid, astfel încât să știi imediat ce ai de făcut.'],['Pot cere informații înainte de colaborare?','Desigur. Putem avea o discuție inițială pentru a înțelege situația și a vedea cum te putem ajuta.']],
+    contactEyebrow:'Contact direct', contactTitle:'Hai să discutăm despre ce ai nevoie', contactText:'Ne poți contacta rapid pentru informații, colaborări sau o discuție inițială. Răspundem profesionist și orientat către soluții.',
+    contactItem1Title:'Email', contactItem2Title:'Telefon', contactItem3Title:'WhatsApp', contactWhatsappText:'Mesaj direct acum',
+    footerText:'Omega Concept — consultanță administrativă premium pentru antreprenori și companii.',
+    services:[
+      {key:'consultantaAdministrativa', title:'Consultanță Administrativă', desc:'Sprijin profesionist pentru organizarea și gestionarea activităților administrative din business.'},
+      {key:'kpi', title:'KPI', desc:'Analiză și monitorizare a indicatorilor de performanță pentru decizii mai bune și rezultate măsurabile.'},
+      {key:'afiliere', title:'Afiliere și Dezafiliere', desc:'Gestionarea proceselor administrative de afiliere și dezafiliere într-un mod clar și eficient.'},
+      {key:'contabilitate', title:'Pregătire Acte Contabile', desc:'Pregătirea, verificarea și organizarea documentelor necesare pentru o evidență corectă.'},
+      {key:'checkinatwork', title:'CheckInAtWork', desc:'Suport pentru registrul electronic de prezență și monitorizarea conformă a activității.'},
+      {key:'consultanta', title:'Consultanță', desc:'Recomandări practice și soluții personalizate pentru dezvoltarea și buna funcționare a afacerii.'}
+    ]
+  },
+  en: {
+    topbarText:'Omega Concept — premium administrative support for entrepreneurs and companies',
+    topbarCta:'Fast WhatsApp response',
+    heroSubtitle:'Premium Administrative Consulting',
+    heroCopy:'We simplify administrative processes, organize documentation, and provide clear support for entrepreneurs and companies seeking more control, less stress, and a trusted partner.',
+    heroPill1:'Fast response', heroPill2:'Professional image', heroPill3:'Solution-oriented support',
+    heroCta1:'Message us on WhatsApp', heroCta2:'Contact us now',
+    navServices:'Services', navProcess:'How we work', navWhy:'Why us', navReviews:'Testimonials', navFaq:'FAQ', navContact:'Contact',
+    trust:[['Clarity','Simple explanations and concrete steps for every situation.'],['Time saved','We reduce administrative chaos and free up your schedule.'],['Professionalism','Elegant communication and care for detail.'],['Results','Actionable solutions, not vague promises.']],
+    servicesEyebrow:'Premium services', servicesTitle:'Everything you need for clear and efficient administration', servicesText:'Omega Concept services are built for entrepreneurs who want structure, speed, and professional communication in every administrative step.',
+    processEyebrow:'Simple process', processTitle:'How we work', processText:'We designed the collaboration to be simple, fast, and clear, so you know from the start what comes next.',
+    steps:[['We assess your needs','We discuss your specific situation and quickly identify what you need.'],['We define the solution','We explain the steps, documents, and exactly how we can help.'],['We implement efficiently','We handle the process in an organized way, with clear communication and steady support.']],
+    whyEyebrow:'Competitive advantage', whyTitle:'Why clients choose Omega Concept', whyText:'We offer more than administrative services. We offer clarity, responsiveness, and a way of working that builds trust.',
+    values:[['Speed','Fast responses and clear solutions without unnecessary complications.'],['Professionalism','Elegant communication and real attention to every detail.'],['Organization','Documents, processes, and information kept in order for your peace of mind.'],['Trust','A serious partner focused on results and long-term collaboration.']],
+    ctaTitle:'Want less stress and more control in your business?', ctaText:'Talk to us directly on WhatsApp or by email and we will quickly tell you how we can help, based on your specific situation.', ctaBtn1:'Quick WhatsApp contact', ctaBtn2:'Send an email',
+    reviewsEyebrow:'Client trust', reviewsTitle:'Experiences that build reputation', reviewsText:'The message your website should send is simple: clients feel they are working with a serious, attentive, and efficient partner.',
+    reviews:[['“The collaboration was clear, fast, and very well organized. From the start, it felt like working with professionals.”','Business client'],['“They helped us simplify administrative processes that were taking too much time. Highly recommended.”','Entrepreneur'],['“Excellent communication, fast support, and a very professional image. Exactly the kind of partner you want.”','Company partner']],
+    faqEyebrow:'Frequently asked questions', faqTitle:'Fast answers to important questions', faqText:'This section helps visitors gain trust and clarity before contacting you.',
+    faqs:[['Who do you work with?','We work with entrepreneurs, freelancers, small businesses, and companies that need clear and professional administrative support.'],['How do we start?','You message us on WhatsApp or email, briefly explain your need, and we respond quickly with the next steps.'],['Do you respond quickly?','Yes, our priority is to provide a clear and fast response so you know immediately what to do next.'],['Can I ask for information before collaborating?','Of course. We can have an initial discussion to understand your situation and see how we can help.']],
+    contactEyebrow:'Direct contact', contactTitle:'Let’s discuss what you need', contactText:'You can contact us quickly for information, collaboration, or an initial discussion. We respond professionally and solution-oriented.',
+    contactItem1Title:'Email', contactItem2Title:'Phone', contactItem3Title:'WhatsApp', contactWhatsappText:'Direct message now',
+    footerText:'Omega Concept — premium administrative consulting for entrepreneurs and companies.',
+    services:[
+      {key:'consultantaAdministrativa', title:'Administrative Consulting', desc:'Professional support for organizing and managing administrative business activities.'},
+      {key:'kpi', title:'KPI', desc:'Performance indicator analysis and monitoring for better decisions and measurable results.'},
+      {key:'afiliere', title:'Affiliation and Withdrawal', desc:'Managing administrative affiliation and withdrawal processes in a clear and efficient way.'},
+      {key:'contabilitate', title:'Accounting Documents Preparation', desc:'Preparing, checking, and organizing documents required for accurate reporting.'},
+      {key:'checkinatwork', title:'CheckInAtWork', desc:'Support for electronic attendance records and compliant activity monitoring.'},
+      {key:'consultanta', title:'Consulting', desc:'Practical recommendations and tailored solutions for business growth and smooth operations.'}
+    ]
+  },
+  fr: {
+    topbarText:'Omega Concept — support administratif premium pour entrepreneurs et entreprises',
+    topbarCta:'Réponse rapide sur WhatsApp',
+    heroSubtitle:'Conseil Administratif Premium',
+    heroCopy:'Nous simplifions les processus administratifs, organisons les documents et offrons un accompagnement clair aux entrepreneurs et aux entreprises qui veulent plus de contrôle, moins de stress et un partenaire de confiance.',
+    heroPill1:'Réponse rapide', heroPill2:'Image professionnelle', heroPill3:'Support orienté solutions',
+    heroCta1:'Écrivez-nous sur WhatsApp', heroCta2:'Contactez-nous maintenant',
+    navServices:'Services', navProcess:'Notre méthode', navWhy:'Pourquoi nous', navReviews:'Témoignages', navFaq:'FAQ', navContact:'Contact',
+    trust:[['Clarté','Des explications simples et des étapes concrètes pour chaque situation.'],['Temps gagné','Nous réduisons le chaos administratif et libérons votre agenda.'],['Professionnalisme','Une communication élégante et le souci du détail.'],['Résultats','Des solutions applicables, pas des promesses vagues.']],
+    servicesEyebrow:'Services premium', servicesTitle:'Tout ce dont vous avez besoin pour une gestion claire et efficace', servicesText:'Les services Omega Concept sont conçus pour les entrepreneurs qui veulent de l’ordre, de la rapidité et une communication professionnelle à chaque étape administrative.',
+    processEyebrow:'Processus simple', processTitle:'Comment nous travaillons', processText:'Nous avons conçu une collaboration simple, rapide et claire afin que vous sachiez dès le départ ce qui va suivre.',
+    steps:[['Nous analysons le besoin','Nous discutons de votre situation concrète et identifions rapidement ce dont vous avez besoin.'],['Nous définissons la solution','Nous expliquons clairement les étapes, les documents et la façon dont nous pouvons vous aider.'],['Nous mettons en œuvre efficacement','Nous gérons le processus avec organisation, communication claire et accompagnement constant.']],
+    whyEyebrow:'Avantage concurrentiel', whyTitle:'Pourquoi les clients choisissent Omega Concept', whyText:'Nous proposons plus que des services administratifs. Nous offrons de la clarté, de la réactivité et une méthode de travail qui inspire confiance.',
+    values:[['Rapidité','Des réponses rapides et des solutions claires, sans complications inutiles.'],['Professionnalisme','Une communication élégante et une véritable attention à chaque détail.'],['Organisation','Des documents, processus et informations bien structurés pour votre tranquillité.'],['Confiance','Un partenaire sérieux, orienté vers les résultats et les collaborations durables.']],
+    ctaTitle:'Vous voulez moins de stress et plus de contrôle dans votre activité ?', ctaText:'Parlez-nous directement sur WhatsApp ou par email et nous vous dirons rapidement comment nous pouvons vous aider selon votre situation concrète.', ctaBtn1:'Contact rapide sur WhatsApp', ctaBtn2:'Envoyer un email',
+    reviewsEyebrow:'Confiance des clients', reviewsTitle:'Des expériences qui construisent la réputation', reviewsText:'Le message que votre site doit transmettre est simple : les clients sentent qu’ils travaillent avec un partenaire sérieux, attentif et efficace.',
+    reviews:[['“La collaboration a été claire, rapide et très bien organisée. Dès le début, nous avons senti que nous travaillions avec des professionnels.”','Client entreprise'],['“Ils nous ont aidés à simplifier des processus administratifs qui nous prenaient trop de temps. Je recommande en toute confiance.”','Entrepreneur'],['“Excellente communication, support rapide et image très professionnelle. Exactement le type de partenaire que l’on recherche.”','Partenaire entreprise']],
+    faqEyebrow:'Questions fréquentes', faqTitle:'Réponses rapides aux questions importantes', faqText:'Cette section aide les visiteurs à gagner en confiance et en clarté avant de vous contacter.',
+    faqs:[['Avec qui travaillez-vous ?','Nous travaillons avec des entrepreneurs, indépendants, PME et entreprises ayant besoin d’un support administratif clair et professionnel.'],['Comment démarrer la collaboration ?','Vous nous écrivez sur WhatsApp ou par email, vous expliquez brièvement votre besoin, et nous revenons rapidement avec les prochaines étapes.'],['Répondez-vous rapidement ?','Oui, notre priorité est de fournir une réponse claire et rapide afin que vous sachiez immédiatement quoi faire.'],['Puis-je demander des informations avant de collaborer ?','Bien sûr. Nous pouvons avoir un premier échange pour comprendre votre situation et voir comment nous pouvons vous aider.']],
+    contactEyebrow:'Contact direct', contactTitle:'Parlons de vos besoins', contactText:'Vous pouvez nous contacter rapidement pour des informations, une collaboration ou un premier échange. Nous répondons de manière professionnelle et orientée solutions.',
+    contactItem1Title:'Email', contactItem2Title:'Téléphone', contactItem3Title:'WhatsApp', contactWhatsappText:'Message direct maintenant',
+    footerText:'Omega Concept — conseil administratif premium pour entrepreneurs et entreprises.',
+    services:[
+      {key:'consultantaAdministrativa', title:'Consultation Administrative', desc:'Un accompagnement professionnel pour organiser et gérer les activités administratives de l’entreprise.'},
+      {key:'kpi', title:'KPI', desc:'Analyse et suivi des indicateurs de performance pour de meilleures décisions et des résultats mesurables.'},
+      {key:'afiliere', title:'Affiliation et Désaffiliation', desc:'Gestion claire et efficace des démarches administratives d’affiliation et de désaffiliation.'},
+      {key:'contabilitate', title:'Préparation des Documents Comptables', desc:'Préparation, vérification et organisation des documents nécessaires à un suivi correct.'},
+      {key:'checkinatwork', title:'CheckInAtWork', desc:'Support pour le registre électronique de présence et le suivi conforme de l’activité.'},
+      {key:'consultanta', title:'Consultation', desc:'Recommandations pratiques et solutions personnalisées pour la croissance et le bon fonctionnement de l’activité.'}
+    ]
+  }
+};
+function setText(id, value){ const el = document.getElementById(id); if (el) el.textContent = value; }
+function renderServices(lang){
+  const grid = document.getElementById('servicesGrid');
+  if (!grid) return;
+  const items = translations[lang].services;
+  grid.innerHTML = items.map(service => `
+    <article class="card">
+      <img src="${serviceImages[service.key]}" alt="${service.title}" loading="lazy" decoding="async">
+      <div class="card-body">
+        <h3>${service.title}</h3>
+        <p>${service.desc}</p>
+      </div>
+    </article>
+  `).join('');
+}
+function setLang(lang){
+  const t = translations[lang] || translations.ro;
+  localStorage.setItem('omega_lang', lang);
+  setText('topbarText', t.topbarText); setText('topbarCta', t.topbarCta);
+  setText('heroSubtitle', t.heroSubtitle); setText('heroCopy', t.heroCopy);
+  setText('heroPill1', t.heroPill1); setText('heroPill2', t.heroPill2); setText('heroPill3', t.heroPill3);
+  setText('heroCta1', t.heroCta1); setText('heroCta2', t.heroCta2);
+  setText('navServices', t.navServices); setText('navProcess', t.navProcess); setText('navWhy', t.navWhy); setText('navReviews', t.navReviews); setText('navFaq', t.navFaq); setText('navContact', t.navContact);
+  setText('trust1Title', t.trust[0][0]); setText('trust1Text', t.trust[0][1]);
+  setText('trust2Title', t.trust[1][0]); setText('trust2Text', t.trust[1][1]);
+  setText('trust3Title', t.trust[2][0]); setText('trust3Text', t.trust[2][1]);
+  setText('trust4Title', t.trust[3][0]); setText('trust4Text', t.trust[3][1]);
+  setText('servicesEyebrow', t.servicesEyebrow); setText('servicesTitle', t.servicesTitle); setText('servicesText', t.servicesText);
+  setText('processEyebrow', t.processEyebrow); setText('processTitle', t.processTitle); setText('processText', t.processText);
+  setText('step1Title', t.steps[0][0]); setText('step1Text', t.steps[0][1]); setText('step2Title', t.steps[1][0]); setText('step2Text', t.steps[1][1]); setText('step3Title', t.steps[2][0]); setText('step3Text', t.steps[2][1]);
+  setText('whyEyebrow', t.whyEyebrow); setText('whyTitle', t.whyTitle); setText('whyText', t.whyText);
+  setText('value1Title', t.values[0][0]); setText('value1Text', t.values[0][1]); setText('value2Title', t.values[1][0]); setText('value2Text', t.values[1][1]); setText('value3Title', t.values[2][0]); setText('value3Text', t.values[2][1]); setText('value4Title', t.values[3][0]); setText('value4Text', t.values[3][1]);
+  setText('ctaTitle', t.ctaTitle); setText('ctaText', t.ctaText); setText('ctaBtn1', t.ctaBtn1); setText('ctaBtn2', t.ctaBtn2);
+  setText('reviewsEyebrow', t.reviewsEyebrow); setText('reviewsTitle', t.reviewsTitle); setText('reviewsText', t.reviewsText);
+  setText('review1', t.reviews[0][0]); setText('review1Name', t.reviews[0][1]); setText('review2', t.reviews[1][0]); setText('review2Name', t.reviews[1][1]); setText('review3', t.reviews[2][0]); setText('review3Name', t.reviews[2][1]);
+  setText('faqEyebrow', t.faqEyebrow); setText('faqTitle', t.faqTitle); setText('faqText', t.faqText);
+  setText('faq1Title', t.faqs[0][0]); setText('faq1Text', t.faqs[0][1]); setText('faq2Title', t.faqs[1][0]); setText('faq2Text', t.faqs[1][1]); setText('faq3Title', t.faqs[2][0]); setText('faq3Text', t.faqs[2][1]); setText('faq4Title', t.faqs[3][0]); setText('faq4Text', t.faqs[3][1]);
+  setText('contactEyebrow', t.contactEyebrow); setText('contactTitle', t.contactTitle); setText('contactText', t.contactText);
+  setText('contactItem1Title', t.contactItem1Title); setText('contactItem2Title', t.contactItem2Title); setText('contactItem3Title', t.contactItem3Title); setText('contactWhatsappText', t.contactWhatsappText);
+  setText('footerText', t.footerText);
+  renderServices(lang);
+}
+console.assert(Object.keys(serviceImages).length === 6, 'Trebuie sa existe 6 imagini');
+console.assert(Object.keys(translations).length === 3, 'Trebuie sa existe 3 limbi');
+console.assert(translations.ro.services.length === 6, 'Trebuie sa existe 6 servicii');
+console.assert(document.getElementById('servicesGrid') !== null, 'servicesGrid trebuie sa existe');
+setLang(localStorage.getItem('omega_lang') || 'ro');
+</script>
+</body>
+</html>
